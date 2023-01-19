@@ -12,7 +12,7 @@ export class AuthController {
   @Get('google/redirect')
   @UseGuards(AuthGuard('google'))
   async redirect(@Req() req) {
-    // will send JWT token from here 
+    // will send JWT token from here nd rest JWT token
     return req;
   }
 }
